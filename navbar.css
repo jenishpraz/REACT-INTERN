@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafc;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 12px;
+    flex: 1;
+}
+
+/* Navbar (desktop) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 14px 28px;
+    height: 64px;
+    width: 90%;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+    color: #2d6cdf;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.navbar li {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar li:hover {
+    color: #2d6cdf;
+}
+
+/* Sidebar (hidden on desktop) */
+.sidebar {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    body {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 25%;
+        height: 100vh;
+        background: white;
+        border-right: 1px solid #e0e0e0;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+        padding-top: 40px;
+    }
+
+    .sidebar li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .sidebar li:hover {
+        color: #2d6cdf;
+    }
+
+    .content {
+        flex: 1;
+        padding: 24px;
+        background: #f9fafc;
+    }
+}
+
+.main {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Boxes */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7, 
+.box8,
+.box9,
+.box10 {
+    height: 100px;
+    flex: 1 1 100px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}

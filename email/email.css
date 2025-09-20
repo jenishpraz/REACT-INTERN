@@ -1,0 +1,112 @@
+/* 🎨 Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 420px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input & Button */
+#emailInput {
+  width: 65%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+#emailInput:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.add {
+  background: #28a745;
+  color: white;
+}
+
+.add:hover {
+  background: #218838;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background: #ffc107;
+  color: #333;
+}
+
+button:nth-child(1):hover {
+  background: #e0a800;
+}
+
+button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background: #c82333;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+/* ⚠️ Error Message */
+#errorMsg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #dc3545;
+  text-align: center;
+  display: none; /* hidden by default */
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="modal.css" />
+    <script type="module" src="modal.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2>🎓 Student Management System</h2>
+
+      <!-- Hidden checkbox to control modal -->
+      <input type="checkbox" id="modal" hidden />
+
+      <!-- Main content -->
+      <div class="main-content" id="main-content">
+        <h3>📋 Student Details</h3>
+        <table class="student-table" id="student-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name of Student</th>
+              <th>Age</th>
+              <th>Email</th>
+              <th>Major</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Aryan Sharma</td>
+              <td>20</td>
+              <td>aryan@example.com</td>
+              <td>Computer Science</td>
+              <td>A</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Priya Koirala</td>
+              <td>22</td>
+              <td>priya@example.com</td>
+              <td>Business Studies</td>
+              <td>B+</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Rahul Thapa</td>
+              <td>19</td>
+              <td>rahul@example.com</td>
+              <td>Information Technology</td>
+              <td>A-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Button to open modal -->
+      <label class="modal-open" for="modal">View Overview</label>
+
+      <!-- Modal -->
+      <div class="backdrop">
+        <div class="modal-box">
+          <div class="content" id="content">
+            <h3>Overview</h3>
+            <p>Total Students: <strong>3</strong></p>
+            <p>Top Performer: <strong>Aryan Sharma</strong></p>
+          </div>
+          <label for="modal" class="modal-close">Close</label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Images</title>
+    <link rel="stylesheet" href="slider.css">
+    </head>
+    <body>
+<body>
+
+  <!-- Transparent background overlay covering whole body -->
+  <div id="slider-bg-overlay"></div>
+
+  <div class="slider-wrapper">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="../assets/image1.jpg" alt="1"></div>
+        <div class="slide"><img src="../assets/image2.jpg" alt="2"></div>
+        <div class="slide"><img src="../assets/image3.jpg" alt="3"></div>
+     
+      </div>
+
+      <div class="slider-buttons">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div id="fullscreen-overlay">
+    <span id="close">&#10006;</span>
+  </div>
+
+<script src="slider.js"></script>
+</body>
+</html>

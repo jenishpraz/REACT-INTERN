@@ -1,0 +1,187 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: #f5f7fb;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Main Container */
+.main {
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Headings */
+h2,
+h3,
+h4 {
+  color: #3f51b5;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+/* Student Table */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.student-table th,
+.student-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.student-table th {
+  background: #3f51b5;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.student-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.student-table tr:hover {
+  background: #eef2ff;
+  transition: 0.2s;
+}
+
+/* Grade Colors */
+.excellent {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.fail {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.normal {
+  color: #6366f1;
+  font-weight: bold;
+}
+
+/* Modal Button */
+.modal-open {
+  padding: 0.8rem 1.5rem;
+  background: #3f51b5;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-open:hover {
+  background: #2f3ca3;
+}
+
+/* Backdrop */
+.backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Content */
+.content {
+  background: #f0f4ff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  color: #333;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Modal Close */
+.modal-close {
+  align-self: flex-end;
+  padding: 0.6rem 1.2rem;
+  background: #ef4444;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-close:hover {
+  background: #d32f2f;
+}
+
+/* Checkbox control */
+#modal:checked ~ .backdrop {
+  display: flex;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
